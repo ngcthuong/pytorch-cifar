@@ -83,6 +83,9 @@ def ResNeXt29_4x64d():
 def ResNeXt29_8x64d():
     return ResNeXt(num_blocks=[3,3,3], cardinality=8, bottleneck_width=64)
 
+def ResNeXt29_16x64d():
+    return ResNeXt(num_blocks=[3,3,3], cardinality=16, bottleneck_width=64)
+    
 def ResNeXt29_32x4d():
     return ResNeXt(num_blocks=[3,3,3], cardinality=32, bottleneck_width=4)
 
