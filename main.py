@@ -12,9 +12,10 @@ import os
 import argparse
 import re
 
+from tensorboardX import SummaryWriter
 
 from models import *
-from utils import progress_bar
+from utils import progress_bar, init_logger
 
 from tensorboardX import SummaryWriter
 
@@ -31,7 +32,7 @@ def findLastCheckpoint(save_dir, modelName):
     return initial_epoch
 
 # Training
-def train(epoch, args):
+def train(net, epoch, args):
     ''' Training code 
     '''
     # Init the loggers - storage intermediate information 
@@ -61,21 +62,9 @@ def train(epoch, args):
     
     acc = 100.*correct/total
 
-    return net.state_dict, acc
-    # Save checkpoint.
-    # print('Saving..')
-    #state = {
-    #    'net': net.state_dict(),
-    #    'acc': acc,
-    #    'epoch': epoch,
-    #}
+    return net.state_dict, acc, train_loss
 
-    #if not os.path.isdir('checkpoint'):
-    #    os.mkdir('checkpoint')
-    #torch.save(state, './checkpoint/', args.network_name + '_TRAIN_epoch' + str(epoch) + '_ckpt.pth')
-
-
-def test(epoch, args):
+def test(net, epoch, args):
     '''
     Testing code
     '''
@@ -131,18 +120,27 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
     parser.add_argument('--resume', type=bool, default = True, help='resume from a previous checkpoint')
-    parser.add_argument('--saveTrain', type=bool, default=False, help='whether or not save training data ')
-    parser.add_argument("--log_dir", type=str, default="logs", help='path of log files')
+    parser.add_argument("--save_every", type=int, default=5,help="Number of training steps")
+    parser.add_argument("--log_dir", type=str, default= "logs", help='path of log files')
     parser.add_argument("--batch_size", type=int, default=128, help="Training batch size")
     parser.add_argument("--data_dir", type=str, default='../data', help='Location to storage data')
-    parser.add_argument("--save_every", type=int, default=10, help="Number of training steps to log accuracy")
-    parser.add_argument("--save_every_epochs", type=int, default=5,	help="Number of training epochs to save state")
+    parser.add_argument("--save_every_epochs", type=int, default=1,	help="Number of training epochs to save state")
     parser.add_argument("--network_name", type=str, default=network_name,	help="Name of the network")
-
+    parser.add_argument("--milestone", nargs=2, type=int, default=[25, 50], \
+						help="When to decay learning rate; should be lower than 'epochs'")
+    parser.add_argument("--epoch_max", "--e", type=int, default= 100, help="Number of total training epochs")
     args = parser.parse_args()
-    save_dir = 'checkpoint/' + network_name + '/'
-    if not os.path.isdir(save_dir):
-        os.mkdir(save_dir)
+    save_dir = 'checkpoint/' + network_name 
+
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+
+    args.log_dir = save_dir + '/' + args.log_dir
+    if not os.path.exists(args.log_dir):
+        os.makedirs(args.log_dir)
+
+    writer = SummaryWriter(args.log_dir)
+    logger = init_logger(args)
 
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -181,48 +179,71 @@ if __name__ == "__main__":
         net = torch.nn.DataParallel(net)
         cudnn.benchmark = True
 
-    if args.resume:
-        # Load checkpoint.     
-        print("Resumming training " + network_name)
-        if args.saveTrain:
-            start_epoch = findLastCheckpoint(save_dir=save_dir, modelName = network_name)  # load the last model in matconvnet style
-            checkpoint = torch.load(save_dir + network_name +  '_epoch' + str(start_epoch) + '.pth')
-        else:
-            checkpoint = torch.load(save_dir + network_name +  '_Best.pth')    
-
-        net.load_state_dict(checkpoint['net'])
-        best_acc = checkpoint['best_acc']
-        best_epoch = checkpoint['best_epoch']   
-        start_epoch = checkpoint['epoch']        
-
 
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
-    
-    
+        
     best_acc = 0
     best_epoch = 0
+    start_epoch = 0
 
-    # Performa traning and testing     
+    if args.resume:
+        # Load checkpoint.     
+        try:            
+            checkpoint = torch.load(save_dir + '/' + network_name +  '_best.pth')    
+            net.load_state_dict(checkpoint['net'])
+            best_acc = checkpoint['best_acc']
+            best_epoch = checkpoint['best_epoch']   
+            start_epoch = checkpoint['epoch']
 
-    for epoch in range(start_epoch, start_epoch+200):
-        net_state, acc_train = train(epoch, args)
-        acc_test = test(epoch, args)
+            print("Resume training " + network_name + " from epoch " + str(start_epoch))
+        except:
+            print("Start training " + network_name + " from epoch 0 ")
+            
+    # Perform traning and testing     
+
+    for epoch in range(start_epoch, args.epoch_max):
+
+        # Learning rate value scheduling according to args.milestone
+        if epoch > args.milestone[1]:
+        	current_lr = args.lr / 1000.
+        elif epoch > args.milestone[0]:
+            current_lr = args.lr / 10.
+        else:
+            current_lr = args.lr
+
+		# set learning rate in optimizer
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = current_lr
+
+        print('learning rate %f' % current_lr)
+
+
+        net_state, acc_train, train_loss = train(net, epoch, args)
+        acc_test = test(net, epoch, args)
 
         # Save each epoch  
         state = {
-            'net': net.state_dict(),
             'acc_test': acc_test,
             'acc_train': acc_train,
             'epoch': epoch,
             'best_epoch': best_epoch,
             'best_acc': best_acc
-        }      
+        }
+    
+        torch.save(state, save_dir + '/' + args.network_name +  '_epoch' + str(epoch) + '.pth')
+        # Log the scalar values
+        writer.add_scalar('acc_test', acc_test, epoch)
+        writer.add_scalar('acc_train', acc_train, epoch)
+        writer.add_scalar('train_loss', train_loss, epoch)
+        writer.add_scalar('current_lr', current_lr, epoch)
+        writer.add_scalar('best_acc', best_acc, epoch)
+        writer.add_scalar('best_epoch', best_epoch, epoch)
 
-        torch.save(state, save_dir + args.network_name +  '_epoch' + str(epoch) + '.pth')
         # Save the best results 
         if acc_test > best_acc:
-            #print('Saving best results ..')                  
-            torch.save(state, save_dir + args.network_name +  '_Best.pth')
+            #print('Saving best results ..')
+            state['net'] = net.state_dict()                   
+            torch.save(state, save_dir + '/' + args.network_name +  '_best.pth')
             best_acc = acc_test
             best_epoch = epoch 

@@ -10,13 +10,18 @@
 	- Option to save network at each epoch 
 	- E.g. VGG11 training data is saved at checkpoint/VGG11/VGG11_epoch#no_epoch.pth
 	
-3. Avaiabled trained data 
+3. Tensorboardx Support	
+	- Using command tensorboard --logdir=log_dir --host localhost --port 8088
+	- Open browser at http://localhost:8088/
+	
+4. Avaiabled trained data 
 	- VGG11 
 	
 	
 #### Todo
-1. Tensorboardx Support
-2. Pretrain data of all network 
+
+1. Pretrain data of all network 
+	- 
 
 
 

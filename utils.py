@@ -10,7 +10,32 @@ import math
 
 import torch.nn as nn
 import torch.nn.init as init
+import logging
 
+def init_logger(argdict):
+	r"""Initializes a logging.Logger to save all the running parameters to a
+	log file
+
+	Args:
+		argdict: dictionary of parameters to be logged
+	"""
+	from os.path import join
+
+	logger = logging.getLogger(__name__)
+	logger.setLevel(level=logging.INFO)
+	fh = logging.FileHandler(join(argdict.log_dir, 'log.txt'), mode='a')
+	formatter = logging.Formatter('%(asctime)s - %(message)s')
+	fh.setFormatter(formatter)
+	logger.addHandler(fh)
+	try:
+		logger.info("Commit: {}".format(get_git_revision_short_hash()))
+	except Exception as e:
+		logger.error("Couldn't get commit number: {}".format(e))
+	logger.info("Arguments: ")
+	for k in argdict.__dict__:
+		logger.info("\t{}: {}".format(k, argdict.__dict__[k]))
+
+	return logger
 
 def get_mean_and_std(dataset):
     '''Compute the mean and std value of dataset.'''
@@ -50,6 +75,7 @@ term_width = 80
 TOTAL_BAR_LENGTH = 65.
 last_time = time.time()
 begin_time = last_time
+
 def progress_bar(current, total, msg=None):
     global last_time, begin_time
     if current == 0:
