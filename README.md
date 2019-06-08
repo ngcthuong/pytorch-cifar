@@ -1,3 +1,22 @@
+# Additional Updates
+### New features 
+1. Save file with all support network name 
+2. Added save check point for every epoch
+	- Now file is save in checkpoint/network/network_epoch#no_epoch.pth 
+	- Best accuracy epoch is save at checkpoint/network/network_Best.pth 
+	- Option to save network at each epoch 
+	- E.g. VGG11 training data is saved at checkpoint/VGG11/VGG11_epoch#no_epoch.pth
+	
+3. Avaiabled trained data 
+	- 
+### Todo
+1. Tensorboardx Support
+2. Pretrain data of all network 
+
+
+
+=========================================
+Original Readme 
 # Train CIFAR10 with PyTorch
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
