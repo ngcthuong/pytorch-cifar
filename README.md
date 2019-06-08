@@ -1,4 +1,7 @@
-# Additional Updates
+# Train CIFAR10 with PyTorch
+
+## Additional Updates
+
 ### New features 
 1. Save file with all support network name 
 2. Added save check point for every epoch
@@ -15,9 +18,7 @@
 
 
 
-=========================================
-Original Readme 
-# Train CIFAR10 with PyTorch
+## Original Readme 
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 
