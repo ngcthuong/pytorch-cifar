@@ -1,8 +1,8 @@
-# Train CIFAR10 with PyTorch
+## Train CIFAR10 with PyTorch
 
-## Additional Updates
+### Additional Updates
 
-### New features 
+#### New features 
 1. Save file with all support network name 
 2. Added save check point for every epoch
 	- Now file is save in checkpoint/network/network_epoch#no_epoch.pth 
@@ -11,22 +11,24 @@
 	- E.g. VGG11 training data is saved at checkpoint/VGG11/VGG11_epoch#no_epoch.pth
 	
 3. Avaiabled trained data 
-	- 
-### Todo
+	- VGG11 
+	
+	
+#### Todo
 1. Tensorboardx Support
 2. Pretrain data of all network 
 
 
 
-## Original Readme 
+### Original Readme 
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 
-## Prerequisites
+#### Prerequisites
 - Python 3.6+
 - PyTorch 1.0+
 
-## Accuracy
+#### Accuracy
 | Model             | Acc.        |
 | ----------------- | ----------- |
 | [VGG16](https://arxiv.org/abs/1409.1556)              | 92.64%      |
@@ -40,7 +42,7 @@ I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 | [PreActResNet18](https://arxiv.org/abs/1603.05027)    | 95.11%      |
 | [DPN92](https://arxiv.org/abs/1707.01629)             | 95.16%      |
 
-## Learning rate adjustment
+#### Learning rate adjustment
 I manually change the `lr` during training:
 - `0.1` for epoch `[0,150)`
 - `0.01` for epoch `[150,250)`
