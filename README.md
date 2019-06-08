@@ -1,6 +1,6 @@
 ## Train CIFAR10 with PyTorch
 
-### Additional Updates
+## Additional Updates
 
 #### New features 
 1. Save file with all support network name 
@@ -20,7 +20,7 @@
 
 
 
-### Original Readme 
+## Original Readme 
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 
