@@ -44,7 +44,7 @@
 
 
 Reported in original repo 
-| ----------------- | ----------- |
+
 | Model             | Train Acc.  |  
 | ----------------- | ----------- |
 | [VGG11](https://arxiv.org/abs/1409.1556)              | 92.64%      |
