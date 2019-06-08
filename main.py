@@ -13,6 +13,7 @@ import argparse
 import re
 
 from tensorboardX import SummaryWriter
+import json
 
 from models import *
 from utils import progress_bar, init_logger
@@ -108,14 +109,14 @@ if __name__ == "__main__":
     
     net_input = {}
     for i, item in enumerate(net_libs.items(), 1):
-        if i < 4:
+        if i < 5:
             net_input[item[0]] = item[0]
         elif item[0] == 'ShuffleNetV2':
             net_input[item[0]] = 1
         else:
             net_input[item[0]] = ''
 
-    network_name = 'VGG11'
+    network_name = 'VGG19'
 
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
@@ -249,8 +250,12 @@ if __name__ == "__main__":
                 'epoch': epoch,
                 'best_epoch': best_epoch,
                 'best_acc': best_acc
-            }   
-            torch.save(state, save_dir + '/' + args.network_name +  '_best.txt')
+            }
+
+            with open(save_dir + '/' + args.network_name +  '_best.txt', 'w') as file:
+                file.write(json.dumps(state)) # use `json.loads` to do the reverse   
+
+            #torch.save(state, save_dir + '/' + args.network_name +  '_best.txt')
             state['net'] = net.state_dict()                   
             torch.save(state, save_dir + '/' + args.network_name +  '_best.pth')
             best_acc = acc_test
