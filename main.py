@@ -223,16 +223,11 @@ if __name__ == "__main__":
         acc_test = test(net, epoch, args)
 
         # Save each epoch  
-        state = {
-            'acc_test': acc_test,
-            'acc_train': acc_train,
-            'epoch': epoch,
-            'best_epoch': best_epoch,
-            'best_acc': best_acc
-        }
+        
     
-        torch.save(state, save_dir + '/' + args.network_name +  '_epoch' + str(epoch) + '.pth')
+        #torch.save(state, save_dir + '/' + args.network_name +  '_epoch' + str(epoch) + '.pth')
         # Log the scalar values
+        #writer.add_scalars('scalar_group', {'acc_test', acc_test, 'acc_train', acc_train}, epoch)
         writer.add_scalar('acc_test', acc_test, epoch)
         writer.add_scalar('acc_train', acc_train, epoch)
         writer.add_scalar('train_loss', train_loss, epoch)
@@ -243,6 +238,13 @@ if __name__ == "__main__":
         # Save the best results 
         if acc_test > best_acc:
             #print('Saving best results ..')
+            state = {
+                'acc_test': acc_test,
+                'acc_train': acc_train,
+                'epoch': epoch,
+                'best_epoch': best_epoch,
+                'best_acc': best_acc
+            }   
             state['net'] = net.state_dict()                   
             torch.save(state, save_dir + '/' + args.network_name +  '_best.pth')
             best_acc = acc_test
