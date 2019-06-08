@@ -174,7 +174,10 @@ if __name__ == "__main__":
     # Model
     print('==> Building ' + network_name + ' model ...')
     
-    net = net_libs[network_name](net_input[network_name])    
+    if net_input[network_name] == '':
+        net = net_libs[network_name]()    
+    else:
+        net = net_libs[network_name](net_input[network_name])    
 
     net = net.to(device)
     if device == 'cuda':

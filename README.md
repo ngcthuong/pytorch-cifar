@@ -38,12 +38,14 @@
 1. Pretrain data of all network 
 
 
-#### Accuracy
+#### Accuracy 
+At best test accuracy epoch
+
 | Model             | Train Acc.  |  Test Acc.  |  Best Epoch  | 
 | ----------------- | ----------- | ----------- | ------------ |
+| [VGG11](https://arxiv.org/abs/1409.1556)  | 92.64%      | 92.64%      | 92.64%      |
 
-
-Reported in original repo 
+Reported in the original repo at https://github.com/kuangliu/pytorch-cifar
 
 | Model             | Train Acc.  |  
 | ----------------- | ----------- |
