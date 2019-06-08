@@ -2,17 +2,24 @@
 
 ## Additional Updates
 
-#### New features 
+### Training 
+- Can be run using IDE such as visual code. 
+- Can use terminar by 
+```
+	python main.py --networ_name VGG16
+```
+
+### New features 
 1. Save file with all support network name 
 2. Added save check point for every epoch
-	- Now file is save in checkpoint/network/network_epoch#no_epoch.pth 
-	- Best accuracy epoch is save at checkpoint/network/network_Best.pth 
+	- Best accuracy epoch is save at checkpoint/network/network_best.pth 
 	- Option to save network at each epoch 
 	- E.g. VGG11 training data is saved at checkpoint/VGG11/VGG11_epoch#no_epoch.pth
-	
-3. Tensorboardx Support	
+3. Learning rate is now controlled 	
+4. Bring tensorboardx Support	
 	- Using command tensorboard --logdir=log_dir --host localhost --port 8088
 	- Open browser at http://localhost:8088/
+	- Only save scalar values of training testing accuracy, loss, epoch, and learning rate 
 	
 4. Avaiabled trained data 
 	- VGG11 

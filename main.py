@@ -130,6 +130,8 @@ if __name__ == "__main__":
 						help="When to decay learning rate; should be lower than 'epochs'")
     parser.add_argument("--epoch_max", "--e", type=int, default= 100, help="Number of total training epochs")
     args = parser.parse_args()
+
+    network_name = args.network_name 
     save_dir = 'checkpoint/' + network_name 
 
     if not os.path.exists(save_dir):
@@ -245,6 +247,7 @@ if __name__ == "__main__":
                 'best_epoch': best_epoch,
                 'best_acc': best_acc
             }   
+            torch.save(state, save_dir + '/' + args.network_name +  '_best.txt')
             state['net'] = net.state_dict()                   
             torch.save(state, save_dir + '/' + args.network_name +  '_best.pth')
             best_acc = acc_test
