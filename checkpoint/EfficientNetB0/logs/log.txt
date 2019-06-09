@@ -22,3 +22,99 @@
 2019-06-09 13:08:08,840 - 	network_name: EfficientNetB0
 2019-06-09 13:08:08,840 - 	milestone: [25, 50]
 2019-06-09 13:08:08,840 - 	epoch_max: 100
+2019-06-09 15:11:47,936 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:11:47,936 - Arguments: 
+2019-06-09 15:11:47,936 - 	lr: 0.1
+2019-06-09 15:11:47,936 - 	resume: True
+2019-06-09 15:11:47,936 - 	save_every: 5
+2019-06-09 15:11:47,937 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:11:47,937 - 	batch_size: 128
+2019-06-09 15:11:47,937 - 	data_dir: ../data
+2019-06-09 15:11:47,937 - 	save_every_epochs: 1
+2019-06-09 15:11:47,937 - 	network_name: EfficientNetB0
+2019-06-09 15:11:47,937 - 	milestone: [25, 50]
+2019-06-09 15:11:47,937 - 	epoch_max: 100
+2019-06-09 15:12:59,404 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:12:59,404 - Arguments: 
+2019-06-09 15:12:59,405 - 	lr: 0.1
+2019-06-09 15:12:59,405 - 	resume: True
+2019-06-09 15:12:59,405 - 	save_every: 5
+2019-06-09 15:12:59,405 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:12:59,405 - 	batch_size: 128
+2019-06-09 15:12:59,405 - 	data_dir: ../data
+2019-06-09 15:12:59,405 - 	save_every_epochs: 1
+2019-06-09 15:12:59,405 - 	network_name: EfficientNetB0
+2019-06-09 15:12:59,406 - 	milestone: [25, 50]
+2019-06-09 15:12:59,406 - 	epoch_max: 100
+2019-06-09 15:15:19,745 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:15:19,746 - Arguments: 
+2019-06-09 15:15:19,747 - 	lr: 0.1
+2019-06-09 15:15:19,747 - 	resume: True
+2019-06-09 15:15:19,747 - 	save_every: 5
+2019-06-09 15:15:19,748 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:15:19,748 - 	batch_size: 128
+2019-06-09 15:15:19,748 - 	data_dir: ../data
+2019-06-09 15:15:19,749 - 	save_every_epochs: 1
+2019-06-09 15:15:19,749 - 	network_name: EfficientNetB0
+2019-06-09 15:15:19,749 - 	milestone: [25, 50]
+2019-06-09 15:15:19,750 - 	epoch_max: 100
+2019-06-09 15:16:21,449 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:16:21,449 - Arguments: 
+2019-06-09 15:16:21,449 - 	lr: 0.1
+2019-06-09 15:16:21,449 - 	resume: True
+2019-06-09 15:16:21,449 - 	save_every: 5
+2019-06-09 15:16:21,450 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:16:21,450 - 	batch_size: 128
+2019-06-09 15:16:21,450 - 	data_dir: ../data
+2019-06-09 15:16:21,450 - 	save_every_epochs: 1
+2019-06-09 15:16:21,450 - 	network_name: EfficientNetB0
+2019-06-09 15:16:21,450 - 	milestone: [25, 50]
+2019-06-09 15:16:21,450 - 	epoch_max: 100
+2019-06-09 15:17:15,414 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:17:15,415 - Arguments: 
+2019-06-09 15:17:15,415 - 	lr: 0.1
+2019-06-09 15:17:15,415 - 	resume: True
+2019-06-09 15:17:15,415 - 	save_every: 5
+2019-06-09 15:17:15,415 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:17:15,415 - 	batch_size: 128
+2019-06-09 15:17:15,415 - 	data_dir: ../data
+2019-06-09 15:17:15,416 - 	save_every_epochs: 1
+2019-06-09 15:17:15,416 - 	network_name: EfficientNetB0
+2019-06-09 15:17:15,416 - 	milestone: [25, 50]
+2019-06-09 15:17:15,416 - 	epoch_max: 100
+2019-06-09 15:18:07,309 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:18:07,309 - Arguments: 
+2019-06-09 15:18:07,309 - 	lr: 0.1
+2019-06-09 15:18:07,309 - 	resume: True
+2019-06-09 15:18:07,310 - 	save_every: 5
+2019-06-09 15:18:07,310 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:18:07,310 - 	batch_size: 128
+2019-06-09 15:18:07,310 - 	data_dir: ../data
+2019-06-09 15:18:07,310 - 	save_every_epochs: 1
+2019-06-09 15:18:07,310 - 	network_name: EfficientNetB0
+2019-06-09 15:18:07,310 - 	milestone: [25, 50]
+2019-06-09 15:18:07,310 - 	epoch_max: 100
+2019-06-09 15:18:34,878 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:18:34,878 - Arguments: 
+2019-06-09 15:18:34,878 - 	lr: 0.1
+2019-06-09 15:18:34,878 - 	resume: True
+2019-06-09 15:18:34,878 - 	save_every: 5
+2019-06-09 15:18:34,879 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:18:34,879 - 	batch_size: 128
+2019-06-09 15:18:34,879 - 	data_dir: ../data
+2019-06-09 15:18:34,879 - 	save_every_epochs: 1
+2019-06-09 15:18:34,879 - 	network_name: EfficientNetB0
+2019-06-09 15:18:34,879 - 	milestone: [25, 50]
+2019-06-09 15:18:34,879 - 	epoch_max: 100
+2019-06-09 15:19:18,557 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:19:18,557 - Arguments: 
+2019-06-09 15:19:18,558 - 	lr: 0.1
+2019-06-09 15:19:18,558 - 	resume: True
+2019-06-09 15:19:18,558 - 	save_every: 5
+2019-06-09 15:19:18,558 - 	log_dir: checkpoint/EfficientNetB0/logs
+2019-06-09 15:19:18,558 - 	batch_size: 128
+2019-06-09 15:19:18,558 - 	data_dir: ../data
+2019-06-09 15:19:18,558 - 	save_every_epochs: 1
+2019-06-09 15:19:18,558 - 	network_name: EfficientNetB0
+2019-06-09 15:19:18,559 - 	milestone: [25, 50]
+2019-06-09 15:19:18,559 - 	epoch_max: 100

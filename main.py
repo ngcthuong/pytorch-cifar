@@ -17,6 +17,7 @@ import json
 
 from models import *
 from utils import progress_bar, init_logger
+#from models.xceptionnet import xceptionnet
 
 from tensorboardX import SummaryWriter
 
@@ -102,10 +103,10 @@ if __name__ == "__main__":
                 'ResNeXt29_2x64d':ResNeXt29_2x64d, 'ResNeXt29_4x64d':ResNeXt29_4x64d, 'ResNeXt29_8x64d':ResNeXt29_8x64d, 
                     'ResNeXt29_16x64d':ResNeXt29_16x64d, 'ResNeXt29_32x4d':ResNeXt29_32x4d, 
                 'DPN26':DPN26, 'DPN92':DPN92, 
-                'ShuffleNetG2':ShuffleNetG2, 'ShuffleNetG3':ShuffleNetG3, 
-                'SENet18': SENet18, 
-                'ShuffleNetV2':ShuffleNetV2, 
-                'GoogLeNet':GoogLeNet, 'MobileNet':MobileNet, 'MobileNetV2':MobileNetV2, 'EfficientNetB0':EfficientNetB0 }
+                'ShuffleNetG2':ShuffleNetG2, 'ShuffleNetG3':ShuffleNetG3, 'ShuffleNetV2':ShuffleNetV2, 
+                'SENet18': SENet18, 'GoogLeNet':GoogLeNet, 
+                'MobileNet':MobileNet, 'MobileNetV2':MobileNetV2, 
+                'EfficientNetB0':EfficientNetB0 }
     
     net_input = {}
     for i, item in enumerate(net_libs.items(), 1):
@@ -113,10 +114,12 @@ if __name__ == "__main__":
             net_input[item[0]] = item[0]
         elif item[0] == 'ShuffleNetV2':
             net_input[item[0]] = 1
+        elif item[0] == 'Xception':
+            net_input[item[0]] = 10
         else:
             net_input[item[0]] = ''
 
-    network_name = 'EfficientNetB0'
+    network_name = 'ShuffleNetG2'
 
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
@@ -191,20 +194,23 @@ if __name__ == "__main__":
         
     best_acc = 0
     best_epoch = 0
-    start_epoch = 0
+    
 
     if args.resume:
-        # Load checkpoint.     
-        try:            
+        # Load checkpoint.   
+        try:   
             checkpoint = torch.load(save_dir + '/' + network_name +  '_best.pth')    
             net.load_state_dict(checkpoint['net'])
-            best_acc = checkpoint['best_acc']
-            best_epoch = checkpoint['best_epoch']   
+            best_acc = checkpoint['acc_test']
+            best_epoch = checkpoint['epoch']   
             start_epoch = checkpoint['epoch']
-
-            print("Resume training " + network_name + " from epoch " + str(start_epoch))
         except:
-            print("Start training " + network_name + " from epoch 0 ")
+            start_epoch = 0
+    else:
+        start_epoch = 0
+
+    print("Resume training " + network_name + " from epoch " + str(start_epoch))
+        
             
     # Perform traning and testing     
 
