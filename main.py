@@ -97,6 +97,7 @@ if __name__ == "__main__":
     # Dictionary of supported networks 
     net_libs = {'VGG11':VGG, 'VGG13':VGG, 'VGG16':VGG, 'VGG19':VGG,  
                 'ResNet18':ResNet18,'ResNet34':ResNet34, 'ResNet50':ResNet50, 'ResNet101':ResNet101,'ResNet152':ResNet152, 
+                'ResNetOrg20':ResNetOrg20,'ResNetOrg32':ResNetOrg32, 'ResNetOrg44':ResNetOrg44,'ResNetOrg56':ResNetOrg56, 'ResNetOrg110':ResNetOrg110,'ResNetOrg1202':ResNetOrg1202, 
                 'PreActResNet18':PreActResNet18,'PreActResNet34':PreActResNet34, 'PreActResNet50':PreActResNet50, 
                     'PreActResNet101':PreActResNet101,'PreActResNet152':PreActResNet152, 
                 'DenseNet121':DenseNet121, 'DenseNet161':DenseNet161, 'DenseNet169':DenseNet169, 'DenseNet201':DenseNet201, 

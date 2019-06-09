@@ -5,9 +5,53 @@ Note, dimension in PyTorch is N*C*H*W
 1, Conv 		24x3x1x1 (no bias)
 2, BatchNorm 24 	
 				(this is difference from original) which is Maxpooling --> because we using for Cifar
-3, 1st Bottleneck group 
-	+ input: - in_planes = 24, 
-			 - out_planes = 176 (which is 200 - 24)
-			 - stride = 2, groups = 2 
-	+ Process
-		- mid_planes = (out_planes/4) = 44
+3, 1st Layer Groups 
+	- intput: out_planes = 200, num_blocks = 4, groups = 2 
+	- 1st Bottleneck groups  ---> this is  (Modified)
+		+ input: - in_planes = 24, 
+				 - out_planes = 176 (which is 200 - 24)
+				 - stride = 2, groups = 2 
+		+ Init
+			- mid_planes = (out_planes/4) = 44
+			- g = 1, becase in_planes = 24
+		+ Process of stacking layer
+			conv1 			44x24x1x1, stride 1, group 1 , no Bias
+			BN 1 			44
+			Relu 
+			ShuffleBlock 	group 1
+			conv2 			44x44x3x3, stride 2, pad 1, groups = 44, no bias ---> this is called Depth-Wise convolution 
+			BN 2			44 (mid_planes)
+			relu
+			Conv3 			176x44x1x1 	Group = 2, no bias 				---> where the number of group taking effect , always 2 
+			BN 3 			176 (out_planes) 						
+			AvgPool2d (3, stride 2, padding 1) 		---> this is pooling of the input 				
+			Concat 			Pooling(input) and BN3 output 
+			
+	- 2nd,3rd and 4th Bottleneck Group (Original)
+		+ input: - in_planes = 200, 
+				 - out_planes = 176 (which is 200 - 0)
+				 - stride = 1, groups = 2 
+				 - cat_planes = 0 
+		+ Init
+			- mid_planes = (200/4) = 50
+			- g = 2, becase in_planes is not 24
+		+ Process of stacking layer
+			conv1 			50x200x1x1, stride 1, group 2 , no Bias
+			BN 1 			50
+			Relu 
+			ShuffleBlock 	groups 2
+			conv2 			50x50x3x3, stride 1, pad 1, 50 = 44, no bias ---> this is called Depth-Wise convolution 
+			BN 2			50 (mid_planes)
+			relu
+			Conv3 			200x50x1x1 	Group = 2, no bias 
+			BN 3 			200 (out_planes) 						
+			AvgPool2d (3, stride 2, padding 1) 		---> this is pooling of the input 				
+			Sum 			input and BN3 output 
+			
+4, 2nd Layer Groups 
+	- intput: out_planes = 400, num_blocks = 8, groups = 2 
+	
+5, 3rd Layer Groups 
+	- intput: out_planes = 800, num_blocks = 4, groups = 2 
+	
+6. Fully connected layer 
