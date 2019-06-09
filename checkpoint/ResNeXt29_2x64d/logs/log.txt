@@ -1,12 +1,24 @@
-2019-06-09 11:03:40,287 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
-2019-06-09 11:03:40,287 - Arguments: 
-2019-06-09 11:03:40,287 - 	lr: 0.1
-2019-06-09 11:03:40,287 - 	resume: True
-2019-06-09 11:03:40,288 - 	save_every: 5
-2019-06-09 11:03:40,288 - 	log_dir: checkpoint/ResNeXt29_2x64d/logs
-2019-06-09 11:03:40,288 - 	batch_size: 128
-2019-06-09 11:03:40,288 - 	data_dir: ../data
-2019-06-09 11:03:40,288 - 	save_every_epochs: 1
-2019-06-09 11:03:40,288 - 	network_name: ResNeXt29_2x64d
-2019-06-09 11:03:40,288 - 	milestone: [25, 50]
-2019-06-09 11:03:40,288 - 	epoch_max: 100
+2019-06-09 11:16:44,991 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 11:16:44,991 - Arguments: 
+2019-06-09 11:16:44,991 - 	lr: 0.1
+2019-06-09 11:16:44,991 - 	resume: True
+2019-06-09 11:16:44,991 - 	save_every: 5
+2019-06-09 11:16:44,991 - 	log_dir: checkpoint/ResNeXt29_2x64d/logs
+2019-06-09 11:16:44,991 - 	batch_size: 128
+2019-06-09 11:16:44,991 - 	data_dir: ../data
+2019-06-09 11:16:44,991 - 	save_every_epochs: 1
+2019-06-09 11:16:44,991 - 	network_name: ResNeXt29_2x64d
+2019-06-09 11:16:44,992 - 	milestone: [25, 50]
+2019-06-09 11:16:44,992 - 	epoch_max: 100
+2019-06-09 11:17:17,959 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 11:17:17,959 - Arguments: 
+2019-06-09 11:17:17,959 - 	lr: 0.1
+2019-06-09 11:17:17,959 - 	resume: True
+2019-06-09 11:17:17,959 - 	save_every: 5
+2019-06-09 11:17:17,959 - 	log_dir: checkpoint/ResNeXt29_2x64d/logs
+2019-06-09 11:17:17,959 - 	batch_size: 128
+2019-06-09 11:17:17,959 - 	data_dir: ../data
+2019-06-09 11:17:17,959 - 	save_every_epochs: 1
+2019-06-09 11:17:17,959 - 	network_name: ResNeXt29_2x64d
+2019-06-09 11:17:17,959 - 	milestone: [25, 50]
+2019-06-09 11:17:17,959 - 	epoch_max: 100

@@ -22,3 +22,15 @@
 2019-06-08 21:31:43,353 - 	network_name: MobileNet
 2019-06-08 21:31:43,353 - 	milestone: [25, 50]
 2019-06-08 21:31:43,353 - 	epoch_max: 100
+2019-06-09 11:04:23,376 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 11:04:23,376 - Arguments: 
+2019-06-09 11:04:23,376 - 	lr: 0.1
+2019-06-09 11:04:23,376 - 	resume: True
+2019-06-09 11:04:23,376 - 	save_every: 5
+2019-06-09 11:04:23,376 - 	log_dir: checkpoint/MobileNet/logs
+2019-06-09 11:04:23,376 - 	batch_size: 128
+2019-06-09 11:04:23,376 - 	data_dir: ../data
+2019-06-09 11:04:23,376 - 	save_every_epochs: 1
+2019-06-09 11:04:23,376 - 	network_name: MobileNet
+2019-06-09 11:04:23,376 - 	milestone: [25, 50]
+2019-06-09 11:04:23,376 - 	epoch_max: 100

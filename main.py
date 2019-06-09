@@ -116,7 +116,7 @@ if __name__ == "__main__":
         else:
             net_input[item[0]] = ''
 
-    network_name = 'VGG19'
+    network_name = 'EfficientNetB0'
 
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
