@@ -92,18 +92,6 @@ At best test accuracy epoch
 In some case the results is not as good as expected like VGG19 perform less than VGG11. The reason might be learning rate and number of epoch is fixed for all networks. Also I trained only 100 epochs. The original repo is trained with 450 epoch. 
 
 
-Reported in the original repo at https://github.com/kuangliu/pytorch-cifar
+Ref. report are reported in the original repo at https://github.com/kuangliu/pytorch-cifar
 
-| Model             | Train Acc.  |  
-| ----------------- | ----------- |
-| [VGG11](https://arxiv.org/abs/1409.1556)              | 92.64%      |
-| [ResNet18](https://arxiv.org/abs/1512.03385)          | 93.02%      |
-| [ResNet50](https://arxiv.org/abs/1512.03385)          | 93.62%      |
-| [ResNet101](https://arxiv.org/abs/1512.03385)         | 93.75%      |
-| [MobileNetV2](https://arxiv.org/abs/1801.04381)       | 94.43%      |
-| [ResNeXt29(32x4d)](https://arxiv.org/abs/1611.05431)  | 94.73%      |
-| [ResNeXt29(2x64d)](https://arxiv.org/abs/1611.05431)  | 94.82%      |
-| [DenseNet121](https://arxiv.org/abs/1608.06993)       | 95.04%      |
-| [PreActResNet18](https://arxiv.org/abs/1603.05027)    | 95.11%      |
-| [DPN92](https://arxiv.org/abs/1707.01629)             | 95.16%      |
 
