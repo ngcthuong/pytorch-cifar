@@ -1,1 +1,1 @@
-{"acc_test": 94.06, "acc_train": 99.758, "epoch": 92, "best_epoch": 81, "best_acc": 94.05}
+{"acc_test": 94.14, "acc_train": 99.752, "epoch": 96, "best_epoch": 95, "best_acc": 94.13}

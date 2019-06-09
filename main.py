@@ -97,7 +97,7 @@ if __name__ == "__main__":
     net_libs = {'VGG11':VGG, 'VGG13':VGG, 'VGG16':VGG, 'VGG19':VGG,  
                 'ResNet18':ResNet18,'ResNet34':ResNet34, 'ResNet50':ResNet50, 'ResNet101':ResNet101,'ResNet152':ResNet152, 
                 'PreActResNet18':PreActResNet18,'PreActResNet34':PreActResNet34, 'PreActResNet50':PreActResNet50, 
-                    'PreActResNet18':PreActResNet101,'PreActResNet18':PreActResNet152, 
+                    'PreActResNet101':PreActResNet101,'PreActResNet152':PreActResNet152, 
                 'DenseNet121':DenseNet121, 'DenseNet161':DenseNet161, 'DenseNet169':DenseNet169, 'DenseNet201':DenseNet201, 
                 'ResNeXt29_2x64d':ResNeXt29_2x64d, 'ResNeXt29_4x64d':ResNeXt29_4x64d, 'ResNeXt29_8x64d':ResNeXt29_8x64d, 
                     'ResNeXt29_16x64d':ResNeXt29_16x64d, 'ResNeXt29_32x4d':ResNeXt29_32x4d, 
