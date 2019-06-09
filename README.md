@@ -52,7 +52,7 @@ At best test accuracy epoch
 | [VGG19](https://arxiv.org/abs/1409.1556)     		   | 99.15%      | 90.15%      | -      | 2014 |
 | [GoogLeNet/Inception v1](https://ai.google/research/pubs/pub43022) | -%      | -%      | -      | 2015 |
 | [ResNet18](https://arxiv.org/abs/1512.03385) 		   | 99.76%      | 94.14%      | 93.02%      | 2015 |
-| [ResNet34](https://arxiv.org/abs/1512.03385) 		   | -%      | 94.27%      | -      |  2015 |
+| [ResNet34](https://arxiv.org/abs/1512.03385) 		   | 99.89%      | 94.60%      | -      |  2015 |
 | [ResNet50](https://arxiv.org/abs/1512.03385) 		   | -%      | -%      | -      | 2015 |
 | [ResNet101](https://arxiv.org/abs/1512.03385) 	   | -%      | -%      | -      | 2015 |
 | [ResNet152](https://arxiv.org/abs/1512.03385) 	   | -%      | -%      | -      | 2015 |
@@ -70,7 +70,7 @@ At best test accuracy epoch
 | [ResNeXt29(8x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -      | 2016 |
 | [ResNeXt29(16x64d)](https://arxiv.org/abs/1608.06993) | -%     | -%      | -      | 2016 |
 | [ResNeXt29(32x4d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | 94.73%      |  2016 |
-| [SENet18](https://arxiv.org/abs/1801.04381)     	   | -%      | -%      | -      | 2017 |
+| [SENet18](https://arxiv.org/abs/1801.04381)     	   | 99.55%      | 93.56%      | -      | 2017 |
 | [ShuffleNetG2](https://arxiv.org/abs/1707.01083)     | -%      | -%      | -      | 2017 |
 | [ShuffleNetG3](https://arxiv.org/abs/1707.01083)     | -%      | -%      | -      | 2017 |
 | [ShuffleNetV2](https://arxiv.org/abs/1807.11164)     | -%      | -%      | -      | 2018 |

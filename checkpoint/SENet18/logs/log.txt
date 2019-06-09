@@ -1,0 +1,12 @@
+2019-06-09 13:11:37,950 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 13:11:37,951 - Arguments: 
+2019-06-09 13:11:37,951 - 	lr: 0.1
+2019-06-09 13:11:37,951 - 	resume: True
+2019-06-09 13:11:37,951 - 	save_every: 5
+2019-06-09 13:11:37,951 - 	log_dir: checkpoint/SENet18/logs
+2019-06-09 13:11:37,951 - 	batch_size: 128
+2019-06-09 13:11:37,951 - 	data_dir: ../data
+2019-06-09 13:11:37,951 - 	save_every_epochs: 1
+2019-06-09 13:11:37,951 - 	network_name: SENet18
+2019-06-09 13:11:37,951 - 	milestone: [25, 50]
+2019-06-09 13:11:37,951 - 	epoch_max: 100
