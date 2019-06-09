@@ -32,8 +32,8 @@
 	- Open browser at http://localhost:8088/
 	- Only save scalar values of training testing accuracy, loss, epoch, and learning rate 
 	
-4. Avaiabled trained data, learning rate are at range [0 25 50 100 ] are 0.1 ,0.01, and 0.0001 
-	- VGG11 
+4. Avaiabled trained data, learning rate are at range [0 25 50 100 ] are 0.1 ,0.01, and 0.0001 (total 100 epochs). In the original repo, author use learning rate of 0.1, 0.01, and 0.001 for each 150 epochs (total 450 epochs). 
+	- VGG11, VGG13, VGG16, VGG19  
 	
 	
 ### Todo
@@ -44,9 +44,21 @@
 #### Accuracy 
 At best test accuracy epoch
 
-| Model             | Train Acc.  |  Test Acc.  |  Best Epoch  | 
+| Model             | Train Acc.  |  Test Acc.  |  Ref. Reported  | 
 | ----------------- | ----------- | ----------- | ------------ |
-| [VGG11](https://arxiv.org/abs/1409.1556)  | 92.64%      | 92.64%      | 92.64%      |
+| [VGG11](https://arxiv.org/abs/1409.1556)  	| 99.17%      | 90.92%      | 92.64%      |
+| [VGG13](https://arxiv.org/abs/1409.1556)  	| 99.49%      | 90.73%      | -%      |
+| [VGG16](https://arxiv.org/abs/1409.1556)  	| 99.42%      | 90.76%      | -%      |
+| [VGG19](https://arxiv.org/abs/1409.1556)     	| 99.15%      | 90.15%      | -%      |
+| [ResNet18](https://arxiv.org/abs/1512.03385) 	| 99.72%      | 94.05%      | 93.02%      |
+| [ResNet34](https://arxiv.org/abs/1512.03385) 	| 99.15%      | 90.15%      | -%      |
+| [ResNet50](https://arxiv.org/abs/1512.03385) 	| 99.15%      | 90.15%      | -%      |
+| [ResNet101](https://arxiv.org/abs/1512.03385) | 99.15%      | 90.15%      | -%      |
+| [ResNet152](https://arxiv.org/abs/1512.03385) | 99.15%      | 90.15%      | -%      |
+
+
+In some case the results is not as good as expected like VGG19 perform less than VGG11. The reason might be learning rate and number of epoch is fixed for all networks. Also I trained only 100 epochs. The original repo is trained with 450 epoch. 
+
 
 Reported in the original repo at https://github.com/kuangliu/pytorch-cifar
 

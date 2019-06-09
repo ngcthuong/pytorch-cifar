@@ -10,3 +10,15 @@
 2019-06-08 21:00:02,229 - 	network_name: VGG16
 2019-06-08 21:00:02,229 - 	milestone: [25, 50]
 2019-06-08 21:00:02,229 - 	epoch_max: 100
+2019-06-08 21:41:01,992 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-08 21:41:01,992 - Arguments: 
+2019-06-08 21:41:01,993 - 	lr: 0.1
+2019-06-08 21:41:01,993 - 	resume: True
+2019-06-08 21:41:01,993 - 	save_every: 5
+2019-06-08 21:41:01,993 - 	log_dir: checkpoint/VGG16/logs
+2019-06-08 21:41:01,993 - 	batch_size: 128
+2019-06-08 21:41:01,993 - 	data_dir: ../data
+2019-06-08 21:41:01,993 - 	save_every_epochs: 1
+2019-06-08 21:41:01,993 - 	network_name: VGG16
+2019-06-08 21:41:01,993 - 	milestone: [25, 50]
+2019-06-08 21:41:01,993 - 	epoch_max: 100

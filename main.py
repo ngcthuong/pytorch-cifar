@@ -224,32 +224,24 @@ if __name__ == "__main__":
 
         print('learning rate %f' % current_lr)
 
-
         net_state, acc_train, train_loss = train(net, epoch, args)
         acc_test = test(net, epoch, args)
 
-        # Save each epoch  
-        
-    
-        #torch.save(state, save_dir + '/' + args.network_name +  '_epoch' + str(epoch) + '.pth')
-        # Log the scalar values
-        #writer.add_scalars('scalar_group', {'acc_test', acc_test, 'acc_train', acc_train}, epoch)
+        # Save each epoch      
         writer.add_scalar('acc_test', acc_test, epoch)
         writer.add_scalar('acc_train', acc_train, epoch)
         writer.add_scalar('train_loss', train_loss, epoch)
-        writer.add_scalar('current_lr', current_lr, epoch)
-        writer.add_scalar('best_acc', best_acc, epoch)
-        writer.add_scalar('best_epoch', best_epoch, epoch)
+        writer.add_scalar('current_lr', current_lr, epoch)        
 
         # Save the best results 
         if acc_test > best_acc:
             #print('Saving best results ..')
+            best_acc = acc_test
+
             state = {
                 'acc_test': acc_test,
                 'acc_train': acc_train,
                 'epoch': epoch,
-                'best_epoch': best_epoch,
-                'best_acc': best_acc
             }
 
             with open(save_dir + '/' + args.network_name +  '_best.txt', 'w') as file:
@@ -258,5 +250,7 @@ if __name__ == "__main__":
             #torch.save(state, save_dir + '/' + args.network_name +  '_best.txt')
             state['net'] = net.state_dict()                   
             torch.save(state, save_dir + '/' + args.network_name +  '_best.pth')
-            best_acc = acc_test
-            best_epoch = epoch 
+
+        writer.add_scalar('best_acc', best_acc, epoch)
+        writer.add_scalar('best_epoch', best_epoch, epoch)
+            
