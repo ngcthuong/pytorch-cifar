@@ -44,41 +44,41 @@
 #### Accuracy 
 At best test accuracy epoch
 
-| Model             | Train Acc.  |  Test Acc.  |  Ref. Reported  | 
-| ----------------- | ----------- | ----------- | ------------ |
+| Model             | Train Acc.  |  Test Acc.  |  Ref. Acc  | 
+| ----------------- | :---: | :---: | :---: |
 | [VGG11](https://arxiv.org/abs/1409.1556)  		   | 99.17%      | 90.92%      | 92.64%      |
-| [VGG13](https://arxiv.org/abs/1409.1556)  		   | 99.49%      | 90.73%      | -%      |
-| [VGG16](https://arxiv.org/abs/1409.1556)  		   | 99.42%      | 90.76%      | -%      |
-| [VGG19](https://arxiv.org/abs/1409.1556)     		   | 99.15%      | 90.15%      | -%      |
+| [VGG13](https://arxiv.org/abs/1409.1556)  		   | 99.49%      | 90.73%      | -      |
+| [VGG16](https://arxiv.org/abs/1409.1556)  		   | 99.42%      | 90.76%      | -      |
+| [VGG19](https://arxiv.org/abs/1409.1556)     		   | 99.15%      | 90.15%      | -      |
 | [ResNet18](https://arxiv.org/abs/1512.03385) 		   | 99.76%      | 94.14%      | 93.02%      |
-| [ResNet34](https://arxiv.org/abs/1512.03385) 		   | -%      | 90.15%      | -%      |
-| [ResNet50](https://arxiv.org/abs/1512.03385) 		   | -%      | 90.15%      | -%      |
-| [ResNet101](https://arxiv.org/abs/1512.03385) 	   | -%      | 90.15%      | -%      |
-| [ResNet152](https://arxiv.org/abs/1512.03385) 	   | -%      | 90.15%      | -%      |
+| [ResNet34](https://arxiv.org/abs/1512.03385) 		   | -%      | 90.15%      | -      |
+| [ResNet50](https://arxiv.org/abs/1512.03385) 		   | -%      | 90.15%      | -      |
+| [ResNet101](https://arxiv.org/abs/1512.03385) 	   | -%      | 90.15%      | -      |
+| [ResNet152](https://arxiv.org/abs/1512.03385) 	   | -%      | 90.15%      | -      |
 | [PreActResNet18](https://arxiv.org/abs/1603.05027)   | -%      | -%      | 95.11%      |
-| [PreActResNet34](https://arxiv.org/abs/1603.05027)   | -%      | -%      | -%      |
-| [PreActResNet50](https://arxiv.org/abs/1603.05027)   | -%      | -%      | -%      |
-| [PreActResNet101](https://arxiv.org/abs/1603.05027)  | -%      | -%      | -%      |
-| [PreActResNet101](https://arxiv.org/abs/1603.05027)  | -%      | -%      | -%      |
+| [PreActResNet34](https://arxiv.org/abs/1603.05027)   | -%      | -%      | -      |
+| [PreActResNet50](https://arxiv.org/abs/1603.05027)   | -%      | -%      | -      |
+| [PreActResNet101](https://arxiv.org/abs/1603.05027)  | -%      | -%      | -      |
+| [PreActResNet101](https://arxiv.org/abs/1603.05027)  | -%      | -%      | -      |
 | [DenseNet121](https://arxiv.org/abs/1608.06993) 	   | -%      | -%      | 95.04%      |
-| [DenseNet161](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -%      |
-| [DenseNet169](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -%      |
-| [DenseNet201](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -%      |
+| [DenseNet161](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -      |
+| [DenseNet169](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -      |
+| [DenseNet201](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -      |
 | [ResNeXt29(2x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | 94.82%      |
-| [ResNeXt29(4x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -%      |
-| [ResNeXt29(8x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -%      |
-| [ResNeXt29(16x64d)](https://arxiv.org/abs/1608.06993) | -%     | -%      | -%      |
+| [ResNeXt29(4x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -      |
+| [ResNeXt29(8x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -      |
+| [ResNeXt29(16x64d)](https://arxiv.org/abs/1608.06993) | -%     | -%      | -      |
 | [ResNeXt29(32x4d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | 94.73%      |
 | [DPN26](https://arxiv.org/abs/1707.01629)            | -%      | -%      | 95.16%      |
-| [DPN92](https://arxiv.org/abs/1707.01629)            | -%      | -%      | -%      |
-| [MobileNet](https://arxiv.org/abs/1801.04381)        | -%      | -%      | -%      |
+| [DPN92](https://arxiv.org/abs/1707.01629)            | -%      | -%      | -      |
+| [MobileNet](https://arxiv.org/abs/1801.04381)        | -%      | -%      | -      |
 | [MobileNetV2](https://arxiv.org/abs/1801.04381)      | -%      | -%      | 94.43%      |
-| [ShuffleNetG2](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -%      |
-| [ShuffleNetG3](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -%      |
-| [ShuffleNetV2](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -%      |
-| [GoogLeNet](https://arxiv.org/abs/1801.04381)        | -%      | -%      | -%      |
-| [EfficientNetB0](https://arxiv.org/abs/1801.04381)   | -%      | -%      | -%      |
-| [SENet18](https://arxiv.org/abs/1801.04381)     	   | -%      | -%      | -%      |
+| [ShuffleNetG2](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -      |
+| [ShuffleNetG3](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -      |
+| [ShuffleNetV2](https://arxiv.org/abs/1801.04381)     | -%      | -%      | -      |
+| [GoogLeNet](https://arxiv.org/abs/1801.04381)        | -%      | -%      | -      |
+| [EfficientNetB0](https://arxiv.org/abs/1801.04381)   | -%      | -%      | -      |
+| [SENet18](https://arxiv.org/abs/1801.04381)     	   | -%      | -%      | -      |
 
 
 In some case the results is not as good as expected like VGG19 perform less than VGG11. The reason might be learning rate and number of epoch is fixed for all networks. Also I trained only 100 epochs. The original repo is trained with 450 epoch. 
