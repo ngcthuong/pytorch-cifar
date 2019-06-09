@@ -66,12 +66,12 @@ At best test accuracy epoch
 | [DenseNet169](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -      |   2016 |
 | [DenseNet201](https://arxiv.org/abs/1608.06993)      | -%      | -%      | -      |   2016 |
 | [ResNeXt29(2x64d)](https://arxiv.org/abs/1608.06993) | 99.81%      | 94.25%      | 94.82%      | 2016 |
-| [ResNeXt29(4x64d)](https://arxiv.org/abs/1608.06993) | 99.xx%      | 93.72%      | -      | 2016 |
+| [ResNeXt29(4x64d)](https://arxiv.org/abs/1608.06993) | 99.92%      | 94.04%      | -      | 2016 |
 | [ResNeXt29(8x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -      | 2016 |
 | [ResNeXt29(16x64d)](https://arxiv.org/abs/1608.06993) | -%     | -%      | -      | 2016 |
 | [ResNeXt29(32x4d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | 94.73%      |  2016 |
 | [SENet18](https://arxiv.org/abs/1801.04381)     	   | 99.55%      | 93.56%      | -      | 2017 |
-| [ShuffleNetG2](https://arxiv.org/abs/1707.01083)     | -%      | -%      | -      | 2017 |
+| [ShuffleNetG2](https://arxiv.org/abs/1707.01083)     | 96.18%      | 90.32%      | -      | 2017 |
 | [ShuffleNetG3](https://arxiv.org/abs/1707.01083)     | -%      | -%      | -      | 2017 |
 | [ShuffleNetG8](https://arxiv.org/abs/1707.01083)     | -%      | -%      | -      | 2017 |
 | [ShuffleNetV2](https://arxiv.org/abs/1807.11164)     | -%      | -%      | -      | 2018 |

@@ -1,0 +1,13 @@
+Debugging ShuffleNet
+Note, dimension in PyTorch is N*C*H*W 
+
+
+1, Conv 		24x3x1x1 (no bias)
+2, BatchNorm 24 	
+				(this is difference from original) which is Maxpooling --> because we using for Cifar
+3, 1st Bottleneck group 
+	+ input: - in_planes = 24, 
+			 - out_planes = 176 (which is 200 - 24)
+			 - stride = 2, groups = 2 
+	+ Process
+		- mid_planes = (out_planes/4) = 44

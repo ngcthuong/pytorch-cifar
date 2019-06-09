@@ -1,1 +1,1 @@
-{"acc_test": 77.35, "acc_train": 81.696, "epoch": 19}
+{"acc_test": 91.11, "acc_train": 96.488, "epoch": 48}
