@@ -8,7 +8,7 @@
 - Can be run using IDE such as visual code. 
 - Can use terminar by 
 ```
-	python main.py --networ_name VGG16
+	python main.py --network_name VGG16
 ```
 - Currently 
 
@@ -25,7 +25,10 @@
 	- E.g. VGG11 training data is saved at checkpoint/VGG11/VGG11_epoch#no_epoch.pth
 3. Learning rate is now controlled 	
 4. Bring tensorboardx Support	
-	- Using command tensorboard --logdir=log_dir --host localhost --port 8088
+	- Using command  
+	```
+		tensorboard --logdir=log_dir --host localhost --port 8088
+	```
 	- Open browser at http://localhost:8088/
 	- Only save scalar values of training testing accuracy, loss, epoch, and learning rate 
 	
@@ -50,8 +53,6 @@ Reported in the original repo at https://github.com/kuangliu/pytorch-cifar
 | Model             | Train Acc.  |  
 | ----------------- | ----------- |
 | [VGG11](https://arxiv.org/abs/1409.1556)              | 92.64%      |
-| [VGG13](https://arxiv.org/abs/1409.1556)              | 92.64%      |
-| [VGG16](https://arxiv.org/abs/1409.1556)              | 92.64%      |
 | [ResNet18](https://arxiv.org/abs/1512.03385)          | 93.02%      |
 | [ResNet50](https://arxiv.org/abs/1512.03385)          | 93.62%      |
 | [ResNet101](https://arxiv.org/abs/1512.03385)         | 93.75%      |
