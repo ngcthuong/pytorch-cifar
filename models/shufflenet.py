@@ -24,7 +24,7 @@ class Bottleneck(nn.Module):
         super(Bottleneck, self).__init__()
         self.stride = stride
 
-        mid_planes = int(out_planes/4)
+        mid_planes = int(out_planes/4)      # Bottomneck channel size 
         g = 1 if in_planes==24 else groups
         self.conv1 = nn.Conv2d(in_planes, mid_planes, kernel_size=1, groups=g, bias=False)
         self.bn1 = nn.BatchNorm2d(mid_planes)
@@ -99,6 +99,22 @@ def ShuffleNetG3():
     }
     return ShuffleNet(cfg)
 
+def ShuffleNetG4():
+    cfg = {
+        'out_planes': [272,544,1088],
+        'num_blocks': [4,8,4],
+        'groups': 4
+    }
+    return ShuffleNet(cfg)
+	
+def ShuffleNetG8():
+    cfg = {
+        'out_planes': [384,768,1536],
+        'num_blocks': [4,8,4],
+        'groups': 8
+    }
+    return ShuffleNet(cfg)
+	
 
 def test():
     net = ShuffleNetG2()

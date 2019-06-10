@@ -69,7 +69,7 @@ At best test accuracy epoch
 | [ResNeXt29(4x64d)](https://arxiv.org/abs/1608.06993) | 99.92%      | 94.04%      | -      | 2016 |
 | [ResNeXt29(8x64d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | -      | 2016 |
 | [ResNeXt29(16x64d)](https://arxiv.org/abs/1608.06993) | -%     | -%      | -      | 2016 |
-| [ResNeXt29(32x4d)](https://arxiv.org/abs/1608.06993) | -%      | -%      | 94.73%      |  2016 |
+| [ResNeXt29(32x4d)](https://arxiv.org/abs/1608.06993) | 99.85%      | 94.55%      | 94.73%      |  2016 |
 | [SENet18](https://arxiv.org/abs/1801.04381)     	   | 99.55%      | 93.56%      | -      | 2017 |
 | [ShuffleNetG2](https://arxiv.org/abs/1707.01083)     | 96.18%      | 90.32%      | -      | 2017 |
 | [ShuffleNetG3](https://arxiv.org/abs/1707.01083)     | 96.29%      | 90.71%      | -      | 2017 |
@@ -82,8 +82,6 @@ At best test accuracy epoch
 | [MobileNet](https://arxiv.org/abs/1704.04861)        | 95.02%      | 89.83%      | -      | 2017 |
 | [MobileNetV2](https://arxiv.org/abs/1801.04381)      | 97.12%      | 92.17%      | 94.43%      | 2018 |
 | [EfficientNetB0](https://arxiv.org/abs/1905.11946)   | 91.26%      | 87.85%      | -      | 2019 |
-
-
 
 
 Ref. accuracy is reported in the original repo at [KuangLiu Repo](https://github.com/kuangliu/pytorch-cifar)

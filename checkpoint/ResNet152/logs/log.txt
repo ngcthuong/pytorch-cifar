@@ -1,0 +1,12 @@
+2019-06-10 09:47:27,372 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-10 09:47:27,372 - Arguments: 
+2019-06-10 09:47:27,372 - 	lr: 0.1
+2019-06-10 09:47:27,372 - 	resume: True
+2019-06-10 09:47:27,372 - 	save_every: 5
+2019-06-10 09:47:27,372 - 	log_dir: checkpoint/ResNet152/logs
+2019-06-10 09:47:27,372 - 	batch_size: 128
+2019-06-10 09:47:27,372 - 	data_dir: ../data
+2019-06-10 09:47:27,372 - 	save_every_epochs: 1
+2019-06-10 09:47:27,372 - 	network_name: ResNet152
+2019-06-10 09:47:27,372 - 	milestone: [25, 50]
+2019-06-10 09:47:27,372 - 	epoch_max: 100

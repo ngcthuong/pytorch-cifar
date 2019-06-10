@@ -104,7 +104,8 @@ if __name__ == "__main__":
                 'ResNeXt29_2x64d':ResNeXt29_2x64d, 'ResNeXt29_4x64d':ResNeXt29_4x64d, 'ResNeXt29_8x64d':ResNeXt29_8x64d, 
                     'ResNeXt29_16x64d':ResNeXt29_16x64d, 'ResNeXt29_32x4d':ResNeXt29_32x4d, 
                 'DPN26':DPN26, 'DPN92':DPN92, 
-                'ShuffleNetG2':ShuffleNetG2, 'ShuffleNetG3':ShuffleNetG3, 'ShuffleNetV2':ShuffleNetV2, 
+                'ShuffleNetG2':ShuffleNetG2, 'ShuffleNetG3':ShuffleNetG3, 'ShuffleNetG4':ShuffleNetG4, 'ShuffleNetG8':ShuffleNetG8, 
+                'ShuffleNetV2':ShuffleNetV2, 
                 'SENet18': SENet18, 'GoogLeNet':GoogLeNet, 
                 'MobileNet':MobileNet, 'MobileNetV2':MobileNetV2, 
                 'EfficientNetB0':EfficientNetB0 }
@@ -120,7 +121,7 @@ if __name__ == "__main__":
         else:
             net_input[item[0]] = ''
 
-    network_name = 'ShuffleNetG2'
+    network_name = 'ShuffleNetG4'
 
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate')

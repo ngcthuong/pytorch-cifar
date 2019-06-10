@@ -1,7 +1,13 @@
 Debugging ShuffleNet
 Note, dimension in PyTorch is N*C*H*W 
 
+Note: Compare paper and this implementation 
+	- Same: 
+		- ShuffleNet unit is identical 
+	- Difference
 
+
+-------------- Implementaiton in the source code ---------------------------------
 1, Conv 		24x3x1x1 (no bias)
 2, BatchNorm 24 	
 				(this is difference from original) which is Maxpooling --> because we using for Cifar

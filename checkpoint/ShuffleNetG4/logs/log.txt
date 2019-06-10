@@ -1,0 +1,144 @@
+2019-06-09 18:21:46,561 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:21:46,561 - Arguments: 
+2019-06-09 18:21:46,561 - 	lr: 0.1
+2019-06-09 18:21:46,562 - 	resume: True
+2019-06-09 18:21:46,562 - 	save_every: 5
+2019-06-09 18:21:46,562 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:21:46,562 - 	batch_size: 128
+2019-06-09 18:21:46,562 - 	data_dir: ../data
+2019-06-09 18:21:46,562 - 	save_every_epochs: 1
+2019-06-09 18:21:46,562 - 	network_name: ShuffleNetG4
+2019-06-09 18:21:46,563 - 	milestone: [25, 50]
+2019-06-09 18:21:46,563 - 	epoch_max: 100
+2019-06-09 18:22:56,598 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:22:56,599 - Arguments: 
+2019-06-09 18:22:56,600 - 	lr: 0.1
+2019-06-09 18:22:56,600 - 	resume: True
+2019-06-09 18:22:56,600 - 	save_every: 5
+2019-06-09 18:22:56,600 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:22:56,600 - 	batch_size: 128
+2019-06-09 18:22:56,600 - 	data_dir: ../data
+2019-06-09 18:22:56,601 - 	save_every_epochs: 1
+2019-06-09 18:22:56,601 - 	network_name: ShuffleNetG4
+2019-06-09 18:22:56,601 - 	milestone: [25, 50]
+2019-06-09 18:22:56,601 - 	epoch_max: 100
+2019-06-09 18:23:35,692 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:23:35,692 - Arguments: 
+2019-06-09 18:23:35,692 - 	lr: 0.1
+2019-06-09 18:23:35,692 - 	resume: True
+2019-06-09 18:23:35,692 - 	save_every: 5
+2019-06-09 18:23:35,692 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:23:35,693 - 	batch_size: 128
+2019-06-09 18:23:35,693 - 	data_dir: ../data
+2019-06-09 18:23:35,693 - 	save_every_epochs: 1
+2019-06-09 18:23:35,693 - 	network_name: ShuffleNetG4
+2019-06-09 18:23:35,693 - 	milestone: [25, 50]
+2019-06-09 18:23:35,693 - 	epoch_max: 100
+2019-06-09 18:24:47,722 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:24:47,722 - Arguments: 
+2019-06-09 18:24:47,722 - 	lr: 0.1
+2019-06-09 18:24:47,722 - 	resume: True
+2019-06-09 18:24:47,722 - 	save_every: 5
+2019-06-09 18:24:47,722 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:24:47,723 - 	batch_size: 128
+2019-06-09 18:24:47,723 - 	data_dir: ../data
+2019-06-09 18:24:47,723 - 	save_every_epochs: 1
+2019-06-09 18:24:47,723 - 	network_name: ShuffleNetG4
+2019-06-09 18:24:47,723 - 	milestone: [25, 50]
+2019-06-09 18:24:47,723 - 	epoch_max: 100
+2019-06-09 18:25:24,319 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:25:24,320 - Arguments: 
+2019-06-09 18:25:24,320 - 	lr: 0.1
+2019-06-09 18:25:24,320 - 	resume: True
+2019-06-09 18:25:24,320 - 	save_every: 5
+2019-06-09 18:25:24,320 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:25:24,320 - 	batch_size: 128
+2019-06-09 18:25:24,320 - 	data_dir: ../data
+2019-06-09 18:25:24,321 - 	save_every_epochs: 1
+2019-06-09 18:25:24,321 - 	network_name: ShuffleNetG4
+2019-06-09 18:25:24,321 - 	milestone: [25, 50]
+2019-06-09 18:25:24,321 - 	epoch_max: 100
+2019-06-09 18:25:59,674 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:25:59,674 - Arguments: 
+2019-06-09 18:25:59,674 - 	lr: 0.1
+2019-06-09 18:25:59,674 - 	resume: True
+2019-06-09 18:25:59,674 - 	save_every: 5
+2019-06-09 18:25:59,675 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:25:59,675 - 	batch_size: 128
+2019-06-09 18:25:59,675 - 	data_dir: ../data
+2019-06-09 18:25:59,675 - 	save_every_epochs: 1
+2019-06-09 18:25:59,675 - 	network_name: ShuffleNetG4
+2019-06-09 18:25:59,675 - 	milestone: [25, 50]
+2019-06-09 18:25:59,675 - 	epoch_max: 100
+2019-06-09 18:27:56,191 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:27:56,191 - Arguments: 
+2019-06-09 18:27:56,191 - 	lr: 0.1
+2019-06-09 18:27:56,191 - 	resume: True
+2019-06-09 18:27:56,192 - 	save_every: 5
+2019-06-09 18:27:56,192 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:27:56,192 - 	batch_size: 128
+2019-06-09 18:27:56,192 - 	data_dir: ../data
+2019-06-09 18:27:56,192 - 	save_every_epochs: 1
+2019-06-09 18:27:56,192 - 	network_name: ShuffleNetG4
+2019-06-09 18:27:56,192 - 	milestone: [25, 50]
+2019-06-09 18:27:56,192 - 	epoch_max: 100
+2019-06-09 18:29:32,624 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:29:32,624 - Arguments: 
+2019-06-09 18:29:32,624 - 	lr: 0.1
+2019-06-09 18:29:32,625 - 	resume: True
+2019-06-09 18:29:32,625 - 	save_every: 5
+2019-06-09 18:29:32,625 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:29:32,626 - 	batch_size: 128
+2019-06-09 18:29:32,626 - 	data_dir: ../data
+2019-06-09 18:29:32,626 - 	save_every_epochs: 1
+2019-06-09 18:29:32,627 - 	network_name: ShuffleNetG4
+2019-06-09 18:29:32,627 - 	milestone: [25, 50]
+2019-06-09 18:29:32,627 - 	epoch_max: 100
+2019-06-09 18:29:54,287 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:29:54,287 - Arguments: 
+2019-06-09 18:29:54,288 - 	lr: 0.1
+2019-06-09 18:29:54,288 - 	resume: True
+2019-06-09 18:29:54,288 - 	save_every: 5
+2019-06-09 18:29:54,288 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:29:54,288 - 	batch_size: 128
+2019-06-09 18:29:54,288 - 	data_dir: ../data
+2019-06-09 18:29:54,288 - 	save_every_epochs: 1
+2019-06-09 18:29:54,288 - 	network_name: ShuffleNetG4
+2019-06-09 18:29:54,289 - 	milestone: [25, 50]
+2019-06-09 18:29:54,289 - 	epoch_max: 100
+2019-06-09 18:39:03,831 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:39:03,832 - Arguments: 
+2019-06-09 18:39:03,832 - 	lr: 0.1
+2019-06-09 18:39:03,832 - 	resume: True
+2019-06-09 18:39:03,832 - 	save_every: 5
+2019-06-09 18:39:03,832 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:39:03,832 - 	batch_size: 128
+2019-06-09 18:39:03,833 - 	data_dir: ../data
+2019-06-09 18:39:03,833 - 	save_every_epochs: 1
+2019-06-09 18:39:03,833 - 	network_name: ShuffleNetG4
+2019-06-09 18:39:03,833 - 	milestone: [25, 50]
+2019-06-09 18:39:03,833 - 	epoch_max: 100
+2019-06-09 18:45:24,772 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:45:24,772 - Arguments: 
+2019-06-09 18:45:24,772 - 	lr: 0.1
+2019-06-09 18:45:24,772 - 	resume: True
+2019-06-09 18:45:24,773 - 	save_every: 5
+2019-06-09 18:45:24,773 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:45:24,773 - 	batch_size: 128
+2019-06-09 18:45:24,773 - 	data_dir: ../data
+2019-06-09 18:45:24,773 - 	save_every_epochs: 1
+2019-06-09 18:45:24,773 - 	network_name: ShuffleNetG4
+2019-06-09 18:45:24,773 - 	milestone: [25, 50]
+2019-06-09 18:45:24,773 - 	epoch_max: 100
+2019-06-09 18:46:47,348 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 18:46:47,349 - Arguments: 
+2019-06-09 18:46:47,349 - 	lr: 0.1
+2019-06-09 18:46:47,349 - 	resume: True
+2019-06-09 18:46:47,349 - 	save_every: 5
+2019-06-09 18:46:47,349 - 	log_dir: checkpoint/ShuffleNetG4/logs
+2019-06-09 18:46:47,349 - 	batch_size: 128
+2019-06-09 18:46:47,349 - 	data_dir: ../data
+2019-06-09 18:46:47,350 - 	save_every_epochs: 1
+2019-06-09 18:46:47,350 - 	network_name: ShuffleNetG4
+2019-06-09 18:46:47,350 - 	milestone: [25, 50]
+2019-06-09 18:46:47,350 - 	epoch_max: 100
