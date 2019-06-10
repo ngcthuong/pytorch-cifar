@@ -1,0 +1,84 @@
+2019-06-09 16:46:42,053 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:46:42,054 - Arguments: 
+2019-06-09 16:46:42,054 - 	lr: 0.1
+2019-06-09 16:46:42,054 - 	resume: True
+2019-06-09 16:46:42,054 - 	save_every: 5
+2019-06-09 16:46:42,054 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:46:42,054 - 	batch_size: 128
+2019-06-09 16:46:42,054 - 	data_dir: ../data
+2019-06-09 16:46:42,054 - 	save_every_epochs: 1
+2019-06-09 16:46:42,054 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:46:42,054 - 	milestone: [25, 50]
+2019-06-09 16:46:42,054 - 	epoch_max: 100
+2019-06-09 16:47:11,526 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:47:11,526 - Arguments: 
+2019-06-09 16:47:11,526 - 	lr: 0.1
+2019-06-09 16:47:11,526 - 	resume: True
+2019-06-09 16:47:11,526 - 	save_every: 5
+2019-06-09 16:47:11,526 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:47:11,526 - 	batch_size: 128
+2019-06-09 16:47:11,526 - 	data_dir: ../data
+2019-06-09 16:47:11,526 - 	save_every_epochs: 1
+2019-06-09 16:47:11,526 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:47:11,526 - 	milestone: [25, 50]
+2019-06-09 16:47:11,526 - 	epoch_max: 100
+2019-06-09 16:47:21,609 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:47:21,609 - Arguments: 
+2019-06-09 16:47:21,609 - 	lr: 0.1
+2019-06-09 16:47:21,609 - 	resume: True
+2019-06-09 16:47:21,609 - 	save_every: 5
+2019-06-09 16:47:21,609 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:47:21,609 - 	batch_size: 128
+2019-06-09 16:47:21,609 - 	data_dir: ../data
+2019-06-09 16:47:21,609 - 	save_every_epochs: 1
+2019-06-09 16:47:21,609 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:47:21,609 - 	milestone: [25, 50]
+2019-06-09 16:47:21,609 - 	epoch_max: 100
+2019-06-09 16:47:53,232 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:47:53,232 - Arguments: 
+2019-06-09 16:47:53,232 - 	lr: 0.1
+2019-06-09 16:47:53,232 - 	resume: True
+2019-06-09 16:47:53,232 - 	save_every: 5
+2019-06-09 16:47:53,232 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:47:53,232 - 	batch_size: 128
+2019-06-09 16:47:53,232 - 	data_dir: ../data
+2019-06-09 16:47:53,232 - 	save_every_epochs: 1
+2019-06-09 16:47:53,232 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:47:53,232 - 	milestone: [25, 50]
+2019-06-09 16:47:53,232 - 	epoch_max: 100
+2019-06-09 16:48:32,295 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:48:32,296 - Arguments: 
+2019-06-09 16:48:32,296 - 	lr: 0.1
+2019-06-09 16:48:32,296 - 	resume: True
+2019-06-09 16:48:32,296 - 	save_every: 5
+2019-06-09 16:48:32,296 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:48:32,296 - 	batch_size: 128
+2019-06-09 16:48:32,296 - 	data_dir: ../data
+2019-06-09 16:48:32,296 - 	save_every_epochs: 1
+2019-06-09 16:48:32,296 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:48:32,296 - 	milestone: [25, 50]
+2019-06-09 16:48:32,296 - 	epoch_max: 100
+2019-06-09 16:49:13,907 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 16:49:13,907 - Arguments: 
+2019-06-09 16:49:13,907 - 	lr: 0.1
+2019-06-09 16:49:13,907 - 	resume: True
+2019-06-09 16:49:13,907 - 	save_every: 5
+2019-06-09 16:49:13,907 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 16:49:13,907 - 	batch_size: 64
+2019-06-09 16:49:13,907 - 	data_dir: ../data
+2019-06-09 16:49:13,907 - 	save_every_epochs: 1
+2019-06-09 16:49:13,907 - 	network_name: ResNeXt29_8x64d
+2019-06-09 16:49:13,907 - 	milestone: [25, 50]
+2019-06-09 16:49:13,907 - 	epoch_max: 100
+2019-06-09 20:37:02,315 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 20:37:02,316 - Arguments: 
+2019-06-09 20:37:02,316 - 	lr: 0.1
+2019-06-09 20:37:02,316 - 	resume: True
+2019-06-09 20:37:02,316 - 	save_every: 5
+2019-06-09 20:37:02,316 - 	log_dir: checkpoint/ResNeXt29_8x64d/logs
+2019-06-09 20:37:02,316 - 	batch_size: 64
+2019-06-09 20:37:02,316 - 	data_dir: ../data
+2019-06-09 20:37:02,316 - 	save_every_epochs: 1
+2019-06-09 20:37:02,316 - 	network_name: ResNeXt29_8x64d
+2019-06-09 20:37:02,316 - 	milestone: [25, 50]
+2019-06-09 20:37:02,316 - 	epoch_max: 100

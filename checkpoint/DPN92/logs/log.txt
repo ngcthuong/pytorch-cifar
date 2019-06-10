@@ -1,0 +1,24 @@
+2019-06-09 14:33:54,770 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 14:33:54,770 - Arguments: 
+2019-06-09 14:33:54,770 - 	lr: 0.1
+2019-06-09 14:33:54,770 - 	resume: True
+2019-06-09 14:33:54,770 - 	save_every: 5
+2019-06-09 14:33:54,770 - 	log_dir: checkpoint/DPN92/logs
+2019-06-09 14:33:54,770 - 	batch_size: 128
+2019-06-09 14:33:54,770 - 	data_dir: ../data
+2019-06-09 14:33:54,770 - 	save_every_epochs: 1
+2019-06-09 14:33:54,770 - 	network_name: DPN92
+2019-06-09 14:33:54,770 - 	milestone: [25, 50]
+2019-06-09 14:33:54,770 - 	epoch_max: 100
+2019-06-09 15:23:57,073 - Couldn't get commit number: name 'get_git_revision_short_hash' is not defined
+2019-06-09 15:23:57,073 - Arguments: 
+2019-06-09 15:23:57,073 - 	lr: 0.1
+2019-06-09 15:23:57,073 - 	resume: True
+2019-06-09 15:23:57,073 - 	save_every: 5
+2019-06-09 15:23:57,073 - 	log_dir: checkpoint/DPN92/logs
+2019-06-09 15:23:57,073 - 	batch_size: 128
+2019-06-09 15:23:57,073 - 	data_dir: ../data
+2019-06-09 15:23:57,073 - 	save_every_epochs: 1
+2019-06-09 15:23:57,073 - 	network_name: DPN92
+2019-06-09 15:23:57,073 - 	milestone: [25, 50]
+2019-06-09 15:23:57,073 - 	epoch_max: 100
